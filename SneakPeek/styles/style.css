@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.navbar li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.ul_navigation {
+    display: flex;
+    gap: 100px;
+}
+
+.li_nav_element {
+    transition: all ease-in-out 0.2s;
+}
+
+.li_nav_element:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.logo:hover {
+    transform: rotate(35deg);
+}
+
+/* Первая секция */
+.section_first {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.img_first_section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Слайдер Swiper */
+.swiper {
+    width: 1000px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 140px !important; 
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 140px !important; 
+}
+
+.swiper-slide p {
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slide-content img {
+    width: 400px;
+}
+
+/* Секция с кнопкой */
+.btn_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.button-section {
+    height: 120px;
+    width: 550px;
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    color: white;
+    background: #000;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+}
+
+.button-section:hover {
+    background: rgb(27, 27, 27);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.section_head {
+    font-family: "Montserrat Alternates";
+    color: #000000;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    font-weight: 400;
+}
+
+/* Третья секция */
+.section-three-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-three-section p {
+    width: 288px;
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-three {
+    margin-top: 180px;
+}
+
+.second_button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+/* Четвертая секция */
+.four_section {
+    padding-top: 215px;
+}
+
+.four_section_cont {
+    display: grid;
+    grid-template-columns: minmax(515px, 300px) 1fr  minmax(515px, 300px);
+    grid-template-areas: "el1 el2 el4"
+                         "el1 el3 el4";
+    grid-gap: 3px;
+}
+
+.grid_element img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.element_1 {grid-area: el1;}
+.element_2 {grid-area: el2;}
+.element_3 {grid-area: el3;  }
+.element_4 {grid-area: el4;}
+
+.element_3 > img {
+    width: 867px; height: 375px;
+}
+/* Пятая секция */
+.section_five {
+    padding-top: 158px;
+}
+
+.five_content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news {
+    width: 572px;
+}
+
+.news img {
+    width: 100%;
+    height: 401px;
+    object-fit: cover;
+}
+
+.news p {
+    font-family: "Montserrat Alternates";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.news span {
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* Футер */
+.footer {
+    background: #000;
+    width: 100%;
+    padding: 40px 0;
+    gap: 0px;
+    max-height: 100%;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    font-weight: 400;
+    color: #ACACAC;
+}
+
+.footer_links ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.list_footer li a {
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    color: #ACACAC;
+}
+
+.list_footer li:first-child a {
+    font-size: 40px;
+    color: white;
+}
+
+.SneakPeek {
+    margin-top: 40px;
+    border-top: 1px solid #ACACAC;
+    color: #FFFFFF;
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0;
+}
